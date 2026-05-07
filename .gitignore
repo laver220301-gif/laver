@@ -1,1 +1,57 @@
-(pdf2md.py is a source file, so no ignores needed)
+```
+# Dependencies
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py~
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.coverage.*
+.cache
+.pytest_cache/
+.mypy_cache/
+
+# Distribution / packaging
+*.tar.gz
+*.whl
+*.zip
+
+# Temporary files
+*.tmp
+*~
+```
+
+Wait, looking at the added files again: `README_GUI.md`, `pdf2md_gui.py`, `requirements_gui.txt` - these are all source/config files, no build artifacts or temporary files. Following rule #6, since the changes contain only source or config files and no build artifacts, dependencies, or temp files, the output should be empty.
+
+```
